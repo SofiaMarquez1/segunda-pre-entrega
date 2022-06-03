@@ -1,0 +1,38 @@
+body{
+    background-color: $color-claro;
+}
+.plantas{
+    background-color: $color-white ;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px;
+    margin: 20px 20px 20px 20px;
+}
+
+.cajap{
+    margin: 30px 30px 30px 30px;
+    text-align: center;
+    .titulop{
+        font-size: 25px;
+    }
+    .btn{
+    transition: font-size 1s;
+}
+    .btn:hover{
+        font-size: 20px;
+    }
+}
+.img{
+    margin-top: 15px;
+}
+
+.intermedio{
+    background-color: $color-verde1;
+    height: 50px;
+    width: 100% ;
+    text-align: center;
+    justify-content: center;
+    .textoIntermedio{
+        padding: 10px 0 10px 0;
+    }
+}

@@ -1,0 +1,122 @@
+.fondo{
+    background-color: $color-white;
+}
+
+.encabezado{
+    background-image: url(../img/banner3.jpg);
+    height: 400px;
+    margin: 0px 30px 0px 30px;
+    .textoe{
+        background-color: $color-negro;
+        color: $color-white;
+        width: 100%;
+        height: 60px;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10px;
+    }
+} 
+.textoe {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+
+.parrafos{
+    padding: 20px 20px 20px 25px;
+    .titulot{
+        color: $color-verde1;
+    }
+    .parrafot{
+        color: $color-negro;
+    }
+}
+
+.listas{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    .lista{
+        background-color: $verde-claro;
+    }
+}
+
+.tips{
+    font-size: 25px;
+    .textotip{
+        font-size: 30px;
+    }
+}
+
+.carrusel1{
+    height: 450px;
+    margin-bottom: 15px;
+    padding-right: 20px;
+}
+.carrusel2{
+    @extend .carrusel1;
+}
+
+.titulocard{
+    background-color: $color-cremita;
+    font-size: 25px;
+}
+.textocard{
+    background-color: $color-claro;
+}
+
+
+@media (max-width: 575px){
+    .encabezado{
+        height: 300px;
+        margin: 0;
+        .textoe{
+        height: 80px;
+        background-color: $color-negro;
+    }
+    }
+    .listas{
+        margin: 0 0 20px 0;
+    }
+    
+    .carrusel1{
+        padding-right: 0;
+    }
+    
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .encabezado{
+        margin: 0;
+    }
+
+    .listas{
+        margin: 0 0 20px 0;
+    }
+
+    .carrusel1{
+        padding-right: 0;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width: 991px){
+    .listas{
+        margin: 0 0 20px 0;
+    }
+    .carrusel1{
+      margin: 20px 250px 20px 250px;
+    }
+}

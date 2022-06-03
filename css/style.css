@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap");
+.parte1 {
+  height: 600px;
+  background-image: url(../img/banner2.jpg);
+}
+
+.parte1 .logo {
+  border-radius: 300px;
+  height: 500px;
+}
+
+.logo {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.medio {
+  background-color: #5bdd54;
+  color: white;
+  height: 100px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.presentacion {
+  height: 300px;
+}
+
+.presentacion .texto {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 25px;
+}
+
+.imagenes {
+  padding-top: 15px;
+}
+
+.cajas {
+  height: 600px;
+  background-image: url(../img/banner.jpg);
+}
+
+.cajas .caja {
+  background-color: #fff0c5;
+}
+
+@media screen and (max-width: 991px) {
+  .presentacion {
+    height: 400px;
+  }
+  .cajas {
+    height: 1000px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .medio {
+    height: 200px;
+  }
+  .presentacion {
+    height: 550px;
+  }
+  .cajas {
+    height: 2000px;
+  }
+}
+
+@media (max-width: 575px) {
+  .parte1 {
+    height: 400px;
+  }
+  .parte1 .logo {
+    height: 300px;
+  }
+  .medio {
+    height: 200px;
+  }
+  .presentacion {
+    height: 800px;
+  }
+  .cajas {
+    height: 2000px;
+  }
+}
+
+.fondo {
+  background-color: white;
+}
+
+.encabezado {
+  background-image: url(../img/banner3.jpg);
+  height: 400px;
+  margin: 0px 30px 0px 30px;
+}
+
+.encabezado .textoe {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.textoe {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.parrafos {
+  padding: 20px 20px 20px 25px;
+}
+
+.parrafos .titulot {
+  color: #63bb63;
+}
+
+.parrafos .parrafot {
+  color: black;
+}
+
+.listas {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.listas .lista {
+  background-color: #c2e7bd;
+}
+
+.tips {
+  font-size: 25px;
+}
+
+.tips .textotip {
+  font-size: 30px;
+}
+
+.carrusel1, .carrusel2 {
+  height: 450px;
+  margin-bottom: 15px;
+  padding-right: 20px;
+}
+
+.titulocard {
+  background-color: #ffc399;
+  font-size: 25px;
+}
+
+.textocard {
+  background-color: #fff0c5;
+}
+
+@media (max-width: 575px) {
+  .encabezado {
+    height: 300px;
+    margin: 0;
+  }
+  .encabezado .textoe {
+    height: 80px;
+    background-color: black;
+  }
+  .listas {
+    margin: 0 0 20px 0;
+  }
+  .carrusel1, .carrusel2 {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .encabezado {
+    margin: 0;
+  }
+  .listas {
+    margin: 0 0 20px 0;
+  }
+  .carrusel1, .carrusel2 {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .listas {
+    margin: 0 0 20px 0;
+  }
+  .carrusel1, .carrusel2 {
+    margin: 20px 250px 20px 250px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.barra {
+  background-color: white;
+}
+
+.barra .logoo {
+  height: 60px;
+  border-radius: 30px;
+}
+
+.barra .search {
+  color: white;
+}
+
+.pagina {
+  transition: font-size 1s;
+}
+
+.pagina:hover {
+  font-size: 20px;
+}
+
+.colorfooter {
+  background-color: #5bdd54;
+}
+
+.colorfooter .letrafooter {
+  color: black;
+}
+
+.colorfooter .frase {
+  font-size: 22px;
+}
+
+.colorf {
+  background: linear-gradient(to top, white, #5bdd54);
+}
+
+body {
+  background-color: #fff0c5;
+}
+
+.plantas {
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px;
+  margin: 20px 20px 20px 20px;
+}
+
+.cajap {
+  margin: 30px 30px 30px 30px;
+  text-align: center;
+}
+
+.cajap .titulop {
+  font-size: 25px;
+}
+
+.cajap .btn {
+  transition: font-size 1s;
+}
+
+.cajap .btn:hover {
+  font-size: 20px;
+}
+
+.img {
+  margin-top: 15px;
+}
+
+.intermedio {
+  background-color: #63bb63;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.intermedio .textoIntermedio {
+  padding: 10px 0 10px 0;
+}

@@ -1,0 +1,115 @@
+
+.parte1{
+    height: 600px;
+    background-image: url(../img/banner2.jpg);
+    .logo{
+        border-radius: 300px;
+        height: 500px;
+    }
+}
+
+.logo {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+ }
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+
+
+@mixin centrado{
+    text-align: center;
+    font-size: 20px;
+}
+$estilo:(
+    fondo: $color-verde,
+    color: $color-white,
+    alto: 100px,
+    centrar: center,
+    fuente: 20px,
+    espacioint: 15px
+);
+
+.medio{
+    background-color: map-get($estilo, fondo);
+    color: map-get($estilo, color);
+    height: map-get($estilo, alto);
+    text-align: map-get($estilo, centrar);
+    font-size: map-get($estilo, fuente);
+    padding-top: map-get($estilo, espacioint);
+}
+
+.presentacion{
+    height: 300px;
+    .texto{
+        @include centrado;
+        padding-top: 25px;
+    }
+}
+
+.imagenes{
+    padding-top: 15px;
+}
+
+.cajas{
+    height: 600px;
+    background-image: url(../img/banner.jpg);
+    .caja{
+        background-color: $color-claro;
+    }
+}
+
+
+
+@media screen and (max-width: 991px){
+    .presentacion{
+        height: 400px;
+    }
+    .cajas{
+        height: 1000px;
+    }
+    
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .medio{
+        height: 200px;
+    }
+    .presentacion{
+        height: 550px;
+    }
+    .cajas{
+        height: 2000px;
+    }
+}
+
+
+
+
+@media (max-width: 575px){
+   .parte1{
+       height: 400px;
+       .logo{
+           height: 300px;
+       }
+   } 
+   .medio{
+       height: 200px;
+   }
+   .presentacion{
+       height: 800px;
+   }
+   .cajas{
+       height: 2000px;
+   }
+    
+}

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap');
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.barra{
+    background-color: $color-white;
+    .logoo{
+        height: 60px;
+        border-radius: 30px;
+    }
+    .search{
+        color: $color-white;
+    }
+}
+
+.pagina{
+    transition: font-size 1s;
+}
+.pagina:hover{
+    font-size: 20px;
+}
+
+.colorfooter{
+    background-color: $color-verde;
+    .letrafooter{
+        color: $color-negro;
+    }
+    .frase{
+        font-size: 22px;
+    }
+}
+
+.colorf{
+    background: linear-gradient(to top, $color-white, $color-verde)
+}
